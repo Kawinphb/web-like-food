@@ -90,7 +90,7 @@ function MainPage() {
   }, [favoriteList]);
   // console.log("fav", favoriteList);
   return (
-    <>
+    <div className="bg-white px-12">
       <Navbar searchItem={searchItem} setDisplay={setDisplay} iniData={foods} />
       <Button
         menuItems={menuItems}
@@ -100,7 +100,7 @@ function MainPage() {
       />
       <FilterBar sortItemUp={sortItemUp} sortItemDn={sortItemDn} />
       <Content listData={display} handleAddFav={handleAddFav} />
-    </>
+    </div>
   );
 }
 
