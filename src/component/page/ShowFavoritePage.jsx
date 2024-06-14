@@ -30,7 +30,7 @@ function ShowFavoritePage() {
     localStorage.setItem("listMeals", JSON.stringify(showDisplay));
   },[showDisplay])
   return (
-    <div>
+    <div className="bg-white px-12">
       <Navbar />
       <button
         className="bg-blue-500 text-white rounded-xl px-4 py-2"

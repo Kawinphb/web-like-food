@@ -1,8 +1,7 @@
 import RestaurantIcon from "@mui/icons-material/Restaurant";
-import SearchBox from "../search-box/SearchBox";
 import { Link } from "react-router-dom";
 
-function Navbar({ searchItem, setDisplay, iniData }) {
+function Navbar() {
   return (
     <nav className="bg-white border-gray-200 pt-8 px-36 ">
       <div className="flex justify-between p-5">
@@ -53,15 +52,6 @@ function Navbar({ searchItem, setDisplay, iniData }) {
             </div>
           </div>
         </div>
-
-        {/* Serch box */}
-        {/* <div className="flex md:order-2 ">
-          <SearchBox
-            searchItem={searchItem}
-            setDisplay={setDisplay}
-            iniData={iniData}
-          />
-        </div> */}
       </div>
     </nav>
   );

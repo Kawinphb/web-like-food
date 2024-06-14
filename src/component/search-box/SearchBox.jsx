@@ -6,7 +6,7 @@ function SearchBox({ searchItem, setDisplay, iniData }) {
     event.preventDefault();
     searchItem(query);
   };
-
+  console.log(query);
   return (
     <div className="flex py-2 px-4 ">
       <form className="relative" onSubmit={handleSubmit}>

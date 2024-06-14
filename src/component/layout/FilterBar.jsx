@@ -1,5 +1,11 @@
 import SearchBox from "../search-box/SearchBox";
-function FilterBar({ sortItemUp, sortItemDn }) {
+function FilterBar({
+  sortItemUp,
+  sortItemDn,
+  searchItem,
+  setDisplay,
+  iniData,
+}) {
   return (
     <div className="flex px-10 items-center h-[50px]">
       <div className="flex w-full justify-between items-center">
@@ -20,7 +26,11 @@ function FilterBar({ sortItemUp, sortItemDn }) {
             </button>
           </div>
         </div>
-        <SearchBox />
+        <SearchBox
+          searchItem={searchItem}
+          setDisplay={setDisplay}
+          iniData={iniData}
+        />
       </div>
     </div>
   );

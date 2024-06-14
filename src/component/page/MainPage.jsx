@@ -78,7 +78,7 @@ function MainPage() {
       return [];
     }
   });
-  
+
   const handleAddFav = (data) => {
     if (favoriteList !== "") {
       setFavoriteList([...favoriteList, data]);
@@ -88,17 +88,23 @@ function MainPage() {
   useEffect(() => {
     localStorage.setItem("listMeals", JSON.stringify(favoriteList));
   }, [favoriteList]);
-  // console.log("fav", favoriteList);
+  
   return (
     <div className="bg-white px-12">
-      <Navbar searchItem={searchItem} setDisplay={setDisplay} iniData={foods} />
+      <Navbar />
       <Button
         menuItems={menuItems}
         filterItems={filterItems}
         setDisplay={setDisplay}
         iniData={foods}
       />
-      <FilterBar sortItemUp={sortItemUp} sortItemDn={sortItemDn} />
+      <FilterBar
+        sortItemUp={sortItemUp}
+        sortItemDn={sortItemDn}
+        searchItem={searchItem}
+        setDisplay={setDisplay}
+        iniData={foods}
+      />
       <Content listData={display} handleAddFav={handleAddFav} />
     </div>
   );
