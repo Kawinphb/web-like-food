@@ -22,14 +22,14 @@ function FoodCard({
           </p>
           {isRemoveList ? (
             <button
-              className="bg-blue-600  hover:bg-blue-500 text-white py-1 px-2 text-xs border border-blue-500 hover:border-transparent rounded"
+              className="bg-rose-600  hover:bg-rose-500 text-white py-1 px-2 text-xs border border-rose-500 hover:border-transparent rounded"
               onClick={() => hadleClickDelete(renderCard.idMeal)}
             >
               Remove
             </button>
           ) : (
             <button
-              className="bg-rose-600  hover:bg-rose-500 text-white py-1 px-2 text-xs border border-rose-500 hover:border-transparent rounded"
+              className="bg-orange-600  hover:bg-orange-500 text-white py-1 px-2 text-xs border border-orange-500 hover:border-transparent rounded"
               onClick={() => handleAddFav(renderCard)}
             >
               Favorite

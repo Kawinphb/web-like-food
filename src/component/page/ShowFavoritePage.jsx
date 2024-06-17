@@ -28,16 +28,20 @@ function ShowFavoritePage() {
   };
   useEffect(() => {
     localStorage.setItem("listMeals", JSON.stringify(showDisplay));
-  },[showDisplay])
+  }, [showDisplay]);
   return (
     <div className="bg-white px-12">
       <Navbar />
-      <button
-        className="bg-blue-500 text-white rounded-xl px-4 py-2"
-        onClick={() => handleClickDeleteActive()}
-      >
-        Remove list
-      </button>
+      <div className="bg-white border-gray-200 py-4 px-36 ">
+        <div className="flex justify-strat ">
+          <button
+            className="select-none rounded-lg bg-orange-400 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            onClick={() => handleClickDeleteActive()}
+          >
+            Remove list
+          </button>
+        </div>
+      </div>
       <Content
         listData={showDisplay}
         isRemoveList={isRemoveList}
