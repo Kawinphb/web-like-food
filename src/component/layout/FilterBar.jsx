@@ -8,7 +8,7 @@ function FilterBar({
 }) {
   return (
     <div className="flex px-10 items-center h-[50px]">
-      <div className="flex w-full justify-between items-center">
+      <div className="flex w-full justify-between items-center px-6">
         <div className="flex items-center justify-end">
           <label htmlFor="button-ratting">Sort by ratting:</label>
           <div className="flex py-2 mx-4 gap-0.5">
