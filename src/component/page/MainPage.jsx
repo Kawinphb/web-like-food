@@ -7,7 +7,7 @@ import axios from "axios";
 function MainPage() {
   const [foods, setFoods] = useState([]); //ini data fetch first timee
   const [display, setDisplay] = useState([]);
-
+  const [state, setState] = useState("")
   //fetch data form API
   const getDataFoods = async () => {
     try {
@@ -47,6 +47,7 @@ function MainPage() {
   const filterItems = (category) => {
     const newItems = foods.filter((item) => item.strCategory === category);
     setDisplay(newItems);
+    setState("")
   };
 
   const searchItem = (nameSearch) => {
@@ -97,6 +98,7 @@ function MainPage() {
         filterItems={filterItems}
         setDisplay={setDisplay}
         iniData={foods}
+        display={display}
       />
       <FilterBar
         sortItemUp={sortItemUp}
@@ -104,6 +106,8 @@ function MainPage() {
         searchItem={searchItem}
         setDisplay={setDisplay}
         iniData={foods}
+        state={state}
+        setState={setState}
       />
       <Content listData={display} handleAddFav={handleAddFav} />
     </div>
