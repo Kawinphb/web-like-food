@@ -42,16 +42,11 @@ function ShowFavoritePage() {
           </button>
         </div>
       </div>
-      {!showDisplay?
-      <Content
-        listData={showDisplay}
-        isRemoveList={isRemoveList}
-        hadleClickDelete={hadleClickDelete}
-      />
-      :<div className="h-96">
-        
-      </div>
-    }
+          <Content
+          listData={showDisplay}
+          isRemoveList={isRemoveList}
+          hadleClickDelete={hadleClickDelete}
+        />
     </div>
   );
 }

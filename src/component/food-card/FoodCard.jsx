@@ -8,11 +8,11 @@ function FoodCard({
   hadleClickDelete,
 }) {
   return (
-    <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-      <div>
+    <div className="w-full min-h-[450px]  md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+      <div className="min-h-[440px] border rounded-[24px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]">
         <a href={renderCard.strYoutube} target="_blank">
           <img
-            className="hover:grow hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-[24px]  "
+            className="rounded-t-[24px]  "
             src={renderCard.strMealThumb}
           />
         </a>

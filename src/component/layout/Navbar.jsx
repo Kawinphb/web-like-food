@@ -26,7 +26,7 @@ function Navbar() {
                 <li>
                   <Link
                     to="/"
-                    className="px-2 text-gray-700hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                    className="px-2 text-gray-700hover:bg-gray-100 max-lg:invisible"
                     aria-current="page"
                   >
                     Home

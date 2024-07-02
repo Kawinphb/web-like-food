@@ -3,7 +3,7 @@ import FoodCard from "../food-card/FoodCard";
 function Content({ listData, handleAddFav, isRemoveList,hadleClickDelete }) {
   
   return (
-    <section className="bg-white ">
+    <section className="bg-white min-h-[70vh] ">
       <div className="container mx-auto flex items-center flex-wrap pt-1 pb-12 px-8">
         {listData.map((meal, index) => (
           <FoodCard 

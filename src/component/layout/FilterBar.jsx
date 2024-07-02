@@ -11,11 +11,11 @@ function FilterBar({
 }) {
 
   return (
-    <div className="flex px-32 items-center h-[50px]">
-      <div className="flex w-full justify-between items-center px-6">
-        <div className="flex items-center justify-end">
-          <label htmlFor="button-ratting">Sort by ratting:</label>
-          <div className="flex py-2 mx-4 gap-0.5">
+    <div className="flex items-center h-[50px] justify-center">
+      <div className="flex w-[80%] justify-between items-center px-6">
+        <div className="flex items-center justify-end max-lg:justify-start">
+          <label htmlFor="button-ratting" className="max-lg:hidden">Sort by ratting:</label>
+          <div className="flex py-2 mx-4 gap-0.5 ">
             <button
               onClick={() => {sortItemUp(),setState("up")}}
               className={state==="up"
