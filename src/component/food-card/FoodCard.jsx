@@ -9,14 +9,14 @@ function FoodCard({
 }) {
   return (
     <div className="w-full min-h-[450px]  md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-      <div className="min-h-[440px] border rounded-[24px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)]">
+      <div className="min-h-[430px] border rounded-[24px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] pb-4">
         <a href={renderCard.strYoutube} target="_blank">
           <img
             className="rounded-t-[24px]  "
             src={renderCard.strMealThumb}
           />
         </a>
-        <div className="pt-3 px-4 flex items-center justify-between">
+        <div className="pt-1 px-4 flex items-center justify-between ">
           <p className="font-bold text-gray-700 text-wrap">
             {renderCard.strMeal}
           </p>
